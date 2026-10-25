@@ -1,0 +1,17 @@
+# Build outputs
+build/
+*.exe
+*.o
+*.obj
+
+# VS Code local/debug state (keep shared project tasks if desired)
+.vscode/ipch/
+
+# Local data and backups generated while running
+# Keep sample data files committed; ignore generated live data/backups.
+dulieu/sach.dat
+dulieu/docgia.dat
+dulieu/phieumuon.dat
+dulieu/lichsugiaodich.dat
+dulieu/backup/
+dulieu/log/*.txt
