@@ -65,8 +65,8 @@ bool xuatDocGiaCSV(const std::string& duongDan, std::string& loi) {
 
 void menuXuatCSV() {
     std::cout << "\n========== XUAT DU LIEU CSV ==========\n";
-    std::cout << "1. Xuat danh muc sach -> dulieu/xuat_sach.csv\n";
-    std::cout << "2. Xuat danh sach doc gia -> dulieu/xuat_docgia.csv\n";
+    std::cout << "1. Xuat danh muc sach -> data/xuat_sach.csv\n";
+    std::cout << "2. Xuat danh sach doc gia -> data/xuat_docgia.csv\n";
     std::cout << "3. Xuat ca hai tep CSV\n";
     std::cout << "0. Quay lai\n";
     std::cout << "Chon: ";
@@ -75,13 +75,13 @@ void menuXuatCSV() {
     std::string loi;
     bool ok = true;
     if (choice == "1" || choice == "3") {
-        ok = xuatSachCSV("dulieu/xuat_sach.csv", loi);
-        if (ok) std::cout << "Da xuat: dulieu/xuat_sach.csv\n";
+        ok = xuatSachCSV("data/xuat_sach.csv", loi);
+        if (ok) std::cout << "Da xuat: data/xuat_sach.csv\n";
         else std::cout << "Xuat sach that bai: " << loi << "\n";
     }
     if (ok && (choice == "2" || choice == "3")) {
-        ok = xuatDocGiaCSV("dulieu/xuat_docgia.csv", loi);
-        if (ok) std::cout << "Da xuat: dulieu/xuat_docgia.csv\n";
+        ok = xuatDocGiaCSV("data/xuat_docgia.csv", loi);
+        if (ok) std::cout << "Da xuat: data/xuat_docgia.csv\n";
         else std::cout << "Xuat doc gia that bai: " << loi << "\n";
     }
     if (choice != "0" && choice != "1" && choice != "2" && choice != "3") {

@@ -143,13 +143,13 @@ Tên trường trong code có thể dùng tiếng Việt không dấu để th�
 
 ```text
 QuanLyThuVien/
-|-- khaibao/       # File khai bao .h
-|-- manguon/       # File cai dat .cpp
-|-- dulieu/        # Du lieu mau va file .dat
+|-- include/       # File khai bao .h
+|-- src/       # File cai dat .cpp
+|-- data/        # Du lieu mau va file .dat
 |   |-- nhatky/    # Log van ban
 |   `-- saoluu/    # Backup theo ngay
-|-- tailieu/       # SRS, thiet ke, bao cao va huong dan
-|-- kiemthu/       # Test case va kiem thu
+|-- docs/       # SRS, thiet ke, bao cao va huong dan
+|-- tests/       # Test case va kiem thu
 |-- .vscode/       # Cau hinh VS Code (giu ten chuan)
 |-- Makefile
 |-- build.bat
@@ -164,4 +164,26 @@ QuanLyThuVien/
 - [ ] Khởi tạo Git, tạo commit đầu tiên bằng danh tính Git của sinh viên.
 - [ ] Tạo repository trên GitHub và push mã nguồn lên remote.
 
-Hai bước Git cuối cần thực hiện bằng tài khoản của sinh viên; tài liệu hướng dẫn lệnh nằm trong `tailieu/huongdandangit.md`.
+Hai bước Git cuối cần thực hiện bằng tài khoản của sinh viên; tài liệu hướng dẫn lệnh nằm trong `docs/huongdandangit.md`.
+
+
+## Yeu cau diem cong can theo duoi
+
+- Dang nhap va phan quyen theo vai tro (da co bo khung demo).
+- Xuat bao cao CSV (da co bo khung demo).
+- Do hieu nang chi tiet, luu ket qua benchmark va tao bieu do so sanh sau khi cac CTDL duoc cai dat.
+- Code sach, chia module, co unit test tu dong va test cho cac truong hop bien.
+
+## Cau truc thu muc theo mau giang vien
+
+```text
+QuanLyThuVien/
+|-- include/
+|-- src/
+|-- data/
+|-- docs/
+|-- tests/
+|-- Makefile
+|-- build.bat
+`-- README.md
+```

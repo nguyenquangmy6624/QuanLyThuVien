@@ -11,7 +11,7 @@
 #include <vector>
 
 namespace {
-const char* FILE_TAI_KHOAN = "dulieu/taikhoan.dat";
+const char* FILE_TAI_KHOAN = "data/taikhoan.dat";
 const uint32_t PHIEN_BAN_FILE = 1;
 const char MA_FILE[8] = {'Q','L','T','V','U','S','R','1'};
 
@@ -141,7 +141,7 @@ bool khoiTaoTaiKhoanNeuChuaCo(bool& daTaoMoi) {
 bool dangNhap(TaiKhoanDangNhap& taiKhoanHienTai) {
     std::vector<BanGhiTaiKhoan> accounts;
     if (!docDanhSachTaiKhoan(accounts)) {
-        std::cerr << "Loi: khong doc duoc dulieu/taikhoan.dat. File co the hong hoac sai phien ban.\n";
+        std::cerr << "Loi: khong doc duoc data/taikhoan.dat. File co the hong hoac sai phien ban.\n";
         return false;
     }
 

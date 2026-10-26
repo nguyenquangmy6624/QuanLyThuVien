@@ -10,9 +10,13 @@
         "-Wall",
         "-Wextra",
         "-pedantic",
-        "-Ikhaibao",
-        "manguon/main.cpp",
-        "manguon/menu.cpp",
+        "-Iinclude",
+        "src/main.cpp",
+        "src/menu.cpp",
+        "src/phanquyen.cpp",
+        "src/xacthuc.cpp",
+        "src/luutru.cpp",
+        "src/xuatcsv.cpp",
         "-o",
         "build/QuanLyThuVien.exe"
       ],
@@ -26,16 +30,29 @@
         "kind": "build",
         "isDefault": true
       },
-      "dependsOn": "Tao thu muc build"
+      "dependsOn": "Create build directories"
     },
     {
-      "label": "Tao thu muc build",
+      "label": "Create build directories",
       "type": "shell",
       "command": "powershell",
       "args": [
         "-NoProfile",
         "-Command",
-        "New-Item -ItemType Directory -Force -Path build | Out-Null"
+        "New-Item -ItemType Directory -Force -Path build,data,data/nhatky,data/saoluu | Out-Null"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run unit tests",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "tests\\chaykiemthu.bat"
       ],
       "options": {
         "cwd": "${workspaceFolder}"

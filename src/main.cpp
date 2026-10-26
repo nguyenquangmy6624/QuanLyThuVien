@@ -29,11 +29,11 @@ int main() {
         return 1;
     }
     if (daTaoDuLieuMau) {
-        std::cout << "Da tao du lieu sach/doc gia mau trong dulieu/*.dat.\n";
+        std::cout << "Da tao du lieu sach/doc gia mau trong data/*.dat.\n";
     }
 
     if (!khoiTaoTaiKhoanNeuChuaCo(daTaoTaiKhoanMoi)) {
-        std::cerr << "Khong khoi tao/doc duoc tai khoan trong dulieu/taikhoan.dat.\n";
+        std::cerr << "Khong khoi tao/doc duoc tai khoan trong data/taikhoan.dat.\n";
         return 1;
     }
     if (daTaoTaiKhoanMoi) {

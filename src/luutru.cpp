@@ -57,7 +57,7 @@ bool docDanhSachSach(std::vector<Sach>& danhSach, std::string& loi) {
     std::ifstream in;
     uint32_t count = 0;
     const char magic[8] = {'Q','L','T','V','S','A','C','H'};
-    if (!moTepDoc("dulieu/sach.dat", magic, count, in)) { loi = "Khong doc duoc dulieu/sach.dat hoac tep khong dung dinh dang."; return false; }
+    if (!moTepDoc("data/sach.dat", magic, count, in)) { loi = "Khong doc duoc data/sach.dat hoac tep khong dung dinh dang."; return false; }
     std::vector<Sach> temp;
     for (uint32_t i = 0; i < count; ++i) {
         Sach item; int32_t nam = 0, tong = 0, con = 0;
@@ -75,7 +75,7 @@ bool docDanhSachSach(std::vector<Sach>& danhSach, std::string& loi) {
 bool ghiDanhSachSach(const std::vector<Sach>& danhSach, std::string& loi) {
     std::ofstream out;
     const char magic[8] = {'Q','L','T','V','S','A','C','H'};
-    if (!moTepGhi("dulieu/sach.dat", magic, static_cast<uint32_t>(danhSach.size()), out)) { loi = "Khong tao/ghi duoc dulieu/sach.dat."; return false; }
+    if (!moTepGhi("data/sach.dat", magic, static_cast<uint32_t>(danhSach.size()), out)) { loi = "Khong tao/ghi duoc data/sach.dat."; return false; }
     for (std::vector<Sach>::const_iterator it = danhSach.begin(); it != danhSach.end(); ++it) {
         int32_t nam = it->namXuatBan, tong = it->soLuongTong, con = it->soLuongCon;
         if (!ghiChuoi(out, it->isbn) || !ghiChuoi(out, it->tenSach) || !ghiChuoi(out, it->tacGia) || !ghiChuoi(out, it->theLoai)) { loi = "Loi khi ghi truong sach."; return false; }
@@ -91,7 +91,7 @@ bool docDanhSachDocGia(std::vector<DocGia>& danhSach, std::string& loi) {
     std::ifstream in;
     uint32_t count = 0;
     const char magic[8] = {'Q','L','T','V','D','O','C','G'};
-    if (!moTepDoc("dulieu/docgia.dat", magic, count, in)) { loi = "Khong doc duoc dulieu/docgia.dat hoac tep khong dung dinh dang."; return false; }
+    if (!moTepDoc("data/docgia.dat", magic, count, in)) { loi = "Khong doc duoc data/docgia.dat hoac tep khong dung dinh dang."; return false; }
     std::vector<DocGia> temp;
     for (uint32_t i = 0; i < count; ++i) {
         DocGia item;
@@ -104,7 +104,7 @@ bool docDanhSachDocGia(std::vector<DocGia>& danhSach, std::string& loi) {
 bool ghiDanhSachDocGia(const std::vector<DocGia>& danhSach, std::string& loi) {
     std::ofstream out;
     const char magic[8] = {'Q','L','T','V','D','O','C','G'};
-    if (!moTepGhi("dulieu/docgia.dat", magic, static_cast<uint32_t>(danhSach.size()), out)) { loi = "Khong tao/ghi duoc dulieu/docgia.dat."; return false; }
+    if (!moTepGhi("data/docgia.dat", magic, static_cast<uint32_t>(danhSach.size()), out)) { loi = "Khong tao/ghi duoc data/docgia.dat."; return false; }
     for (std::vector<DocGia>::const_iterator it = danhSach.begin(); it != danhSach.end(); ++it) {
         if (!ghiChuoi(out, it->cmndCccd) || !ghiChuoi(out, it->hoTen) || !ghiChuoi(out, it->email) || !ghiChuoi(out, it->soDienThoai) || !ghiChuoi(out, it->loaiThe)) { loi = "Loi khi ghi truong doc gia."; return false; }
     }
@@ -113,8 +113,8 @@ bool ghiDanhSachDocGia(const std::vector<DocGia>& danhSach, std::string& loi) {
 
 bool khoiTaoDuLieuMauNeuChuaCo(bool& daTaoMoi, std::string& loi) {
     daTaoMoi = false;
-    bool sachMoi = !tepTonTai("dulieu/sach.dat");
-    bool docGiaMoi = !tepTonTai("dulieu/docgia.dat");
+    bool sachMoi = !tepTonTai("data/sach.dat");
+    bool docGiaMoi = !tepTonTai("data/docgia.dat");
     if (!sachMoi && !docGiaMoi) { loi.clear(); return true; }
 
     if (sachMoi) {

@@ -4,18 +4,18 @@ build/
 *.o
 *.obj
 
-# VS Code local/debug state
+# VS Code cache
 .vscode/ipch/
 
-# Du lieu phat sinh khi chay; giu lai cac tep .gitkeep
-/dulieu/sach.dat
-/dulieu/docgia.dat
-/dulieu/taikhoan.dat
-/dulieu/phieumuon.dat
-/dulieu/lichsugiaodich.dat
-/dulieu/saoluu/*
-!/dulieu/saoluu/.gitkeep
-/dulieu/nhatky/*.txt
+# Runtime binary data (keep source-controlled .gitkeep files)
+/data/sach.dat
+/data/docgia.dat
+/data/taikhoan.dat
+/data/phieumuon.dat
+/data/lichsugiaodich.dat
+/data/saoluu/*
+!/data/saoluu/.gitkeep
+/data/nhatky/*.txt
 
 # Generated CSV exports
-dulieu/xuat_*.csv
+/data/xuat_*.csv
