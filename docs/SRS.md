@@ -1,7 +1,7 @@
 # ĐẶC TẢ YÊU CẦU PHẦN MỀM (SRS)
 
 **Tên dự án:** QuanLyThuVien - Chương trình quản lý thư viện bằng C++  
-**Phiên bản:** 1.0 (bản yêu cầu ban đầu)  
+**Phiên bản:** Bản yêu cầu ban đầu
 **Ngày lập:** 25/10/2026  
 **Trạng thái:** Bản nháp để thống nhất phạm vi trước khi thiết kế chi tiết
 
@@ -22,7 +22,7 @@ Sản phẩm là ứng dụng console viết bằng C++11 trở lên, quản lý
 
 ## 4. Yêu cầu chức năng
 
-### FR-01. Quản lý sách
+### Quản lý sách
 
 - Thêm, sửa và xóa sách; dữ liệu gồm ISBN, tên sách, tác giả, thể loại, năm xuất bản và số lượng.
 - ISBN phải duy nhất; dữ liệu số phải hợp lệ và số lượng không âm.
@@ -30,49 +30,49 @@ Sản phẩm là ứng dụng console viết bằng C++11 trở lên, quản lý
 - Tìm theo tiền tố tên sách và gợi ý tên phù hợp.
 - Import/export danh mục sách qua file văn bản.
 
-### FR-02. Quản lý độc giả
+### Quản lý độc giả
 
 - Thêm, sửa và xóa độc giả; dữ liệu gồm CMND/CCCD, họ tên, email, số điện thoại và loại thẻ.
 - CMND/CCCD phải duy nhất.
 - Tìm độc giả theo CMND/CCCD và thống kê độc giả theo loại thẻ.
 
-### FR-03. Mượn sách
+### Mượn sách
 
 - Lập phiếu mượn gồm mã phiếu, CMND/CCCD, ISBN, ngày mượn và ngày hẹn trả.
 - Chỉ lập phiếu khi độc giả tồn tại, sách tồn tại, còn số lượng cho mượn và dữ liệu ngày hợp lệ.
 - Không cho số lượng mượn vượt quá số lượng có thể cho mượn.
 
-### FR-04. Trả sách và tiền phạt
+### Trả sách và tiền phạt
 
 - Ghi nhận trả sách và cập nhật trạng thái phiếu mượn, số lượng sách.
 - Nếu trả quá hạn, tính tiền phạt theo số ngày quá hạn nhân với đơn giá phạt mỗi ngày.
 - Đơn giá phạt cần được thống nhất với giảng viên/nhóm trước khi chốt bản triển khai; không hard-code một mức tiền chưa được phê duyệt trong tài liệu yêu cầu.
 
-### FR-05. Lịch sử giao dịch
+### Lịch sử giao dịch
 
 - Ghi lại các giao dịch mượn/trả phục vụ tra cứu và thống kê.
 - Dữ liệu lịch sử phải được lưu và đọc lại sau khi khởi động chương trình.
 
-### FR-06. Thống kê và báo cáo
+### Thống kê và báo cáo
 
 - Đếm lượt mượn theo tháng, thể loại và độc giả.
 - Hiển thị Top 10 sách được mượn nhiều nhất và Top 10 độc giả mượn nhiều nhất.
 - Xuất báo cáo ra file văn bản.
 
-### FR-07. Tìm kiếm và gợi ý nâng cao
+### Tìm kiếm và gợi ý nâng cao
 
 - Gợi ý sách cùng thể loại dựa trên đồ thị và duyệt BFS/DFS.
 - Tìm sách theo tiền tố tên bằng CTDL cây đã chốt; loại cây cụ thể cần được xác nhận do có khác biệt giữa ảnh đề bài và đính chính hiện tại.
 - Gợi ý sách liên quan dựa trên lịch sử mượn khi dữ liệu lịch sử đủ để tạo liên kết.
 
-### FR-08. Lưu trữ, log và sao lưu
+### Lưu trữ, log và sao lưu
 
 - Tự động đọc dữ liệu từ file khi khởi động.
 - Lưu dữ liệu ra file khi có thay đổi và khi thoát an toàn.
 - Dùng file nhị phân `.dat` cho dữ liệu chính; file văn bản `.txt` cho log/báo cáo.
 - Tạo bản sao lưu theo ngày; lỗi file phải được thông báo và xử lý an toàn.
 
-### FR-09. Chức năng mở rộng
+### Chức năng mở rộng
 
 - Đăng nhập bằng tài khoản và mật khẩu; giới hạn 3 lần sai liên tiếp trong một phiên đăng nhập.
 - Phân quyền theo vai trò Admin, Thủ thư và Độc giả; kiểm tra quyền ở cả menu và xử lý nghiệp vụ.
