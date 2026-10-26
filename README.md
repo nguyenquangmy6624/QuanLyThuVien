@@ -36,7 +36,7 @@ Luu y: `.vscode` duoc giu nguyen ten vi VS Code tu dong nhan dien thu muc cau hi
 2. Mo thu muc `QuanLyThuVien` bang VS Code (File > Open Folder...).
 3. Mo Terminal > New Terminal.
 4. Kiem tra compiler: `g++ --version`.
-5. Chay lenh `./build.bat` trong PowerShell (hoac `build.bat` trong Command Prompt).
+5. Chay lenh `.\build.bat` trong PowerShell (hoac `build.bat` trong Command Prompt).
 
 Neu terminal khong nhan `g++`, can cai va cau hinh compiler truoc khi chay.
 
@@ -58,3 +58,17 @@ Neu terminal khong nhan `g++`, can cai va cau hinh compiler truoc khi chay.
 - Khong dung SQL, SQLite hay he quan tri co so du lieu nao.
 - Moi CTDL phai duoc giai thich: vi sao chon, chuc nang ap dung va do phuc tap.
 - Commit Git theo tung phan viec, khong gom het vao mot commit cuoi cung.
+
+
+## Chuc nang mo rong moi them
+
+- Dang nhap, 3 vai tro: Admin / Thu thu / Doc gia; tu choi truy cap theo quyen.
+- Doi mat khau va toi da 3 lan dang nhap moi phien.
+- Luu tai khoan dang nhi phan tai `dulieu/taikhoan.dat` (hash FNV-1a chi la minh hoa hoc tap).
+- Luu du lieu sach/doc gia dang nhi phan tai `dulieu/sach.dat` va `dulieu/docgia.dat`; lan dau tao du lieu mau.
+- Xuat danh muc sach va danh sach doc gia ra CSV UTF-8: `dulieu/xuat_sach.csv`, `dulieu/xuat_docgia.csv`.
+- Unit test cho phan quyen va CSV: chay `kiemthu\\chaykiemthu.bat` tren Windows.
+
+Tai lieu huong dan: `tailieu/huongdansudung_dangnhap_csv.md`.
+
+Luu y: cac module quan ly sach, doc gia, muon-tra va thong ke hien van la khung chua hoan thanh; phan CSV doc du lieu tu cac tep `.dat` hien co (tao data mau trong lan chay dau).

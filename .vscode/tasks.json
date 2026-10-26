@@ -14,7 +14,7 @@
         "manguon/main.cpp",
         "manguon/menu.cpp",
         "-o",
-        "QuanLyThuVien.exe"
+        "build/QuanLyThuVien.exe"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
@@ -25,7 +25,22 @@
       "group": {
         "kind": "build",
         "isDefault": true
-      }
+      },
+      "dependsOn": "Tao thu muc build"
+    },
+    {
+      "label": "Tao thu muc build",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "New-Item -ItemType Directory -Force -Path build | Out-Null"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
     }
   ]
 }

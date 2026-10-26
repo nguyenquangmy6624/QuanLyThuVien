@@ -1,28 +1,24 @@
-# Ke hoach kiem thu (bo sung test tu dong dan dan)
+# Ke hoach kiem thu
 
-## Menu va nhap lieu
-- [ ] Nhap lua chon hop le.
-- [ ] Nhap ky tu thay vi so.
-- [ ] Nhap lua chon ngoai pham vi.
-- [ ] Thoat bang lua chon 0.
+## Tuan 1 - Cau truc va menu khoi dau
+- [ ] Bien dich duoc bang C++11 tro len.
+- [ ] Hien thi menu chinh.
+- [ ] Tu choi lua chon khong hop le.
+- [ ] Cho phep thoat bang lua chon 0.
 
-## Quan ly sach (cac dot tiep theo)
-- [ ] ISBN moi duoc them thanh cong.
-- [ ] ISBN trung bi tu choi.
-- [ ] Tim ISBN co ton tai/khong ton tai.
-- [ ] Cap nhat/xoa sach ton tai va khong ton tai.
-- [ ] BST in tang dan theo ISBN.
-- [ ] AVL van can bang sau them/xoa.
+## Tuan hien tai - Dang nhap, phan quyen va xuat CSV
+- [ ] Tao tai khoan demo neu chua co file tai khoan.
+- [ ] Dang nhap dung tai khoan/mat khau.
+- [ ] Tu choi dang nhap sai sau 3 lan.
+- [ ] Doc gia khong thay va khong truy cap duoc muc quan ly sach/doc gia/muon-tra/thong ke/xuat CSV.
+- [ ] Thu thu duoc xuat CSV.
+- [ ] Admin xuat duoc ca hai file CSV.
+- [ ] Truong CSV co dau phay, ngoac kep va xuong dong duoc escape dung.
+- [ ] File CSV duoc xuat co BOM UTF-8 va mo duoc bang Excel.
+- [ ] Doi mat khau dung/xac nhan va tu choi mat khau ngan hon 8 ky tu.
+- [ ] Unit test quyen va CSV chay thanh cong.
 
-## Doc gia va muon-tra (cac dot tiep theo)
-- [ ] CMND/CCCD trung bi tu choi.
-- [ ] Va cham hash duoc xu ly bang separate chaining.
-- [ ] Khong cho muon khi doc gia/sach khong ton tai.
-- [ ] Khong cho muon vuot so luong con.
-- [ ] Tinh tien phat dung khi qua han va bang 0 khi dung han.
-
-## File (cac dot tiep theo)
-- [ ] Khoi dong khi file chua ton tai.
-- [ ] Luu va doc lai du lieu khong mat truong.
-- [ ] Phat hien file bi loi/khong doc duoc.
-- [ ] Backup co ten theo ngay va khong vo tinh ghi de du lieu goc.
+## Cac tuan tiep theo
+- [ ] Bo sung test AVL/BST quan ly sach.
+- [ ] Bo sung test Hash Table quan ly doc gia.
+- [ ] Bo sung test muon/tra, file va bao cao.
