@@ -4,7 +4,7 @@
 
 ## Muc tieu
 
-Xay dung ung dung console bang C++11 tro len, quan ly sach, doc gia, muon-tra, thong ke va goi y. Du lieu luu trong file nhi phan `.dat` va file van ban `.txt`; **khong su dung co so du lieu**.
+Xay dung do an tin hoc quan li thu vien bang ung dung console bang C++11 tro len, quan ly sach, doc gia, muon-tra, thong ke va goi y. Du lieu luu trong file nhi phan `.dat` va file van ban `.txt`; **khong su dung co so du lieu**.
 
 ## Cau truc thu muc theo yeu cau giang vien
 
