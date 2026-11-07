@@ -87,16 +87,16 @@ QuanLyThuVien/
 
 | Tuần | Checklist | Sản phẩm / ghi chú |
 |---|---|---|
-| **Tuần 1** | [x] Repo Git/GitHub<br>[x] SRS.pdf<br>[x] Cấu trúc thư mục | Repo GitHub, `docs/SRS.pdf`, cấu trúc dự án |
-| **Tuần 2** | [x] Design.pdf<br>[x] Sơ đồ lớp / sơ đồ module<br>[x] Định nghĩa struct | `docs/Design.pdf`, `docs/sodolop.png`, `include/cacstruct.h` |
-| **Tuần 3** | [ ] AVL<br>[ ] BST<br>[ ] Test quản lý sách | Cài đặt AVL/BST và kiểm thử thêm, tìm, xóa, duyệt sách |
-| **Tuần 4** | [ ] Hash Table<br>[ ] Test quản lý độc giả | Hash Table dùng separate chaining và kiểm thử độc giả |
-| **Tuần 5** | [ ] LinkedList<br>[ ] Dynamic Array<br>[ ] File I/O | Danh sách phiếu mượn, mảng động lịch sử, đọc/ghi `.dat` |
-| **Tuần 6** | [ ] Mượn sách<br>[ ] Trả sách<br>[ ] Tính phạt | Hoàn thiện quy trình mượn/trả và kiểm tra quá hạn |
-| **Tuần 7** | [ ] Graph<br>[ ] BFS/DFS<br>[ ] Thống kê Top 10 | Đồ thị gợi ý sách và các báo cáo thống kê |
-| **Tuần 8** | [ ] CTDL mới tự tìm hiểu<br>[ ] Tích hợp<br>[ ] Demo | Cài đặt từ đầu, tích hợp và demo cấu trúc dữ liệu đã chọn |
-| **Tuần 9** | [ ] Unit test đầy đủ<br>[ ] Bảng so sánh<br>[ ] User manual | Bộ kiểm thử tự động, so sánh độ phức tạp/hiệu năng, hướng dẫn sử dụng |
-| **Tuần 10** | [ ] Báo cáo<br>[ ] Video<br>[ ] Slide<br>[ ] Nộp và ký | Hoàn thiện hồ sơ và sản phẩm nộp cuối kỳ |
+| **Tuần 1** | ☑ Repo Git/GitHub · ☑ SRS.pdf · ☑ Cấu trúc thư mục | Repo GitHub, `docs/SRS.pdf`, cấu trúc dự án |
+| **Tuần 2** | ☑ Design.pdf · ☑ Sơ đồ lớp / sơ đồ module · ☑ Định nghĩa struct | `docs/Design.pdf`, `docs/sodolop.png`, `include/cacstruct.h` |
+| **Tuần 3** | ☐ AVL · ☐ BST · ☐ Test quản lý sách | Cài đặt AVL/BST và kiểm thử thêm, tìm, xóa, duyệt sách |
+| **Tuần 4** | ☐ Hash Table · ☐ Test quản lý độc giả | Hash Table dùng separate chaining và kiểm thử độc giả |
+| **Tuần 5** | ☐ LinkedList · ☐ Dynamic Array · ☐ File I/O | Danh sách phiếu mượn, mảng động lịch sử, đọc/ghi `.dat` |
+| **Tuần 6** | ☐ Mượn sách · ☐ Trả sách · ☐ Tính phạt | Hoàn thiện quy trình mượn/trả và kiểm tra quá hạn |
+| **Tuần 7** | ☐ Graph · ☐ BFS/DFS · ☐ Thống kê Top 10 | Đồ thị gợi ý sách và các báo cáo thống kê |
+| **Tuần 8** | ☐ CTDL mới tự tìm hiểu · ☐ Tích hợp · ☐ Demo | Cài đặt từ đầu, tích hợp và demo cấu trúc dữ liệu đã chọn |
+| **Tuần 9** | ☐ Unit test đầy đủ · ☐ Bảng so sánh · ☐ User manual | Bộ kiểm thử tự động, so sánh độ phức tạp/hiệu năng, hướng dẫn sử dụng |
+| **Tuần 10** | ☐ Báo cáo · ☐ Video · ☐ Slide · ☐ Nộp và ký | Hoàn thiện hồ sơ và sản phẩm nộp cuối kỳ |
 
 ## 7. Mục tiêu điểm cộng
 
