@@ -1,19 +1,19 @@
 CXX = g++
 CXXFLAGS = -std=c++11 -Wall -Wextra -pedantic -Iinclude
-SRC = src/main.cpp src/menu.cpp src/phanquyen.cpp src/xacthuc.cpp src/luutru.cpp src/xuatcsv.cpp
-HEADERS = include/cacstruct.h include/menu.h include/phanquyen.h include/xacthuc.h include/luutru.h include/xuatcsv.h
+SRC = src/main.cpp src/menu.cpp src/phanquyen.cpp src/xacthuc.cpp src/luutru.cpp src/xuatcsv.cpp \
+      src/cay_avl.cpp src/cay_bst.cpp src/quanly_sach.cpp src/bangbam_docgia.cpp \
+      src/quanly_docgia.cpp src/danh_sach_phieumuon.cpp src/menu_tuan5.cpp
+HEADERS = $(wildcard include/*.h)
 TARGET = build/QuanLyThuVien
 
 all: $(TARGET)
 
 $(TARGET): $(SRC) $(HEADERS)
-	mkdir -p build
+	mkdir -p build data/nhatky data/saoluu
 	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
 
 test:
-	mkdir -p build
-	$(CXX) $(CXXFLAGS) tests/test_tinh_nang.cpp src/phanquyen.cpp src/xuatcsv.cpp src/luutru.cpp -o build/test_tinh_nang
-	./build/test_tinh_nang
+	bash tests/chaykiemthu.sh
 
 clean:
 	rm -rf build

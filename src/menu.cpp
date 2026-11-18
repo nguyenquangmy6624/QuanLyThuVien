@@ -18,6 +18,7 @@ int showMainMenu(VaiTro vaiTro) {
     if (coQuyen(vaiTro, ChucNang::XuatCSV)) std::cout << "7. Xuat CSV\n";
     std::cout << "8. Doi mat khau\n";
     std::cout << "9. Dang xuat\n";
+    if (coQuyen(vaiTro, ChucNang::DemoTuan5)) std::cout << "10. Demo CTDL Tuan 5 (LinkedList / Dynamic Array / File I/O)\n";
     std::cout << "0. Thoat chuong trinh\n";
     std::cout << "--------------------------------------------\n";
     std::cout << "Nhap lua chon: ";

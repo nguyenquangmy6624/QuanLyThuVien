@@ -6,57 +6,32 @@
       "type": "shell",
       "command": "g++",
       "args": [
-        "-std=c++11",
-        "-Wall",
-        "-Wextra",
-        "-pedantic",
-        "-Iinclude",
-        "src/main.cpp",
-        "src/menu.cpp",
-        "src/phanquyen.cpp",
-        "src/xacthuc.cpp",
-        "src/luutru.cpp",
-        "src/xuatcsv.cpp",
-        "-o",
-        "build/QuanLyThuVien.exe"
+        "-std=c++11", "-Wall", "-Wextra", "-pedantic", "-Iinclude",
+        "src/main.cpp", "src/menu.cpp", "src/phanquyen.cpp", "src/xacthuc.cpp",
+        "src/luutru.cpp", "src/xuatcsv.cpp", "src/cay_avl.cpp", "src/cay_bst.cpp",
+        "src/quanly_sach.cpp", "src/bangbam_docgia.cpp", "src/quanly_docgia.cpp",
+        "src/danh_sach_phieumuon.cpp", "src/menu_tuan5.cpp",
+        "-o", "build/QuanLyThuVien.exe"
       ],
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
-      "problemMatcher": [
-        "$gcc"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": ["$gcc"],
+      "group": { "kind": "build", "isDefault": true },
       "dependsOn": "Create build directories"
     },
     {
       "label": "Create build directories",
       "type": "shell",
       "command": "powershell",
-      "args": [
-        "-NoProfile",
-        "-Command",
-        "New-Item -ItemType Directory -Force -Path build,data,data/nhatky,data/saoluu | Out-Null"
-      ],
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
+      "args": ["-NoProfile", "-Command", "New-Item -ItemType Directory -Force -Path build,data,data/nhatky,data/saoluu | Out-Null"],
+      "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": []
     },
     {
-      "label": "Run unit tests",
+      "label": "Run all unit tests",
       "type": "shell",
       "command": "cmd",
-      "args": [
-        "/c",
-        "tests\\chaykiemthu.bat"
-      ],
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
+      "args": ["/c", "tests\\chaykiemthu.bat"],
+      "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": []
     }
   ]

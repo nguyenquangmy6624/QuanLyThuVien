@@ -1,31 +1,16 @@
-# Checklist do an theo tuan
+# Checklist tien do do an theo tuan
 
-Theo checklist giang vien cung cap. Danh dau sau khi hoan thanh va kiem tra ket qua.
+| Tuan | Noi dung | Trang thai | Tep minh chung |
+|---|---|---|---|
+| 1 | Repo Git, SRS.pdf, cau truc thu muc | Hoan thanh | README.md, docs/SRS.pdf |
+| 2 | Design.pdf, so do module, struct | Hoan thanh | docs/Design.pdf, docs/sodolop.png, include/cacstruct.h |
+| 3 | AVL, BST, test quan ly sach | Hoan thanh va da chay test | include/cay_avl.h, include/cay_bst.h, tests/test_tuan3.cpp |
+| 4 | Hash Table separate chaining, test doc gia | Hoan thanh va da chay test | include/bangbam_docgia.h, tests/test_tuan4.cpp |
+| 5 | LinkedList, Dynamic Array, File I/O | Hoan thanh va da chay test | include/danh_sach_phieumuon.h, include/mang_dong.h, tests/test_tuan5.cpp |
+| 6 | Muon sach, tra sach, tinh phat | Chua thuc hien | Se bo sung |
+| 7 | Graph, BFS/DFS, thong ke Top 10 | Chua thuc hien | Se bo sung |
+| 8 | CTDL tu tim hieu, tich hop, demo | Chua thuc hien | Can chot loai cay voi giang vien |
+| 9 | Unit test day du, bang so sanh, user manual | Dang tiep tuc | Mo rong test va benchmark |
+| 10 | Bao cao, video, slide, nop bai | Chua thuc hien | Se bo sung |
 
-| Tuan | Cong viec | Trang thai |
-|---|---|---|
-| 1 | Repo Git; SRS.pdf; cau truc thu muc | Dang thuc hien - da co cau truc va SRS, can sinh vien init/push Git |
-| 2 | Design.pdf; so do lop; dinh nghia struct | Chua bat dau |
-| 3 | AVL; BST; test quan ly sach | Chua bat dau |
-| 4 | Hash Table; test quan ly doc gia | Chua bat dau |
-| 5 | LinkedList; Dynamic Array; File I/O | Chua bat dau |
-| 6 | Muon sach; tra sach; tinh phat | Chua bat dau |
-| 7 | Graph; BFS/DFS; thong ke Top 10 | Chua bat dau |
-| 8 | CTDL moi; tich hop; demo | Chua bat dau |
-| 9 | Unit test; bang so sanh; user manual | Chua bat dau |
-| 10 | Bao cao; video; slide; nop va ky | Chua bat dau |
-
-## Nguyen tac
-
-- Hoan thanh va commit cong viec theo tung tuan, khong don het vao commit cuoi.
-- Chua chuyen sang phan tiep theo neu artefact cua tuan hien tai chua duoc kiem tra.
-- Tai lieu can phan biet ro phan da lam, phan chua lam va cac quyet dinh can xin y kien giang vien.
-
-
-## Chuc nang diem cong theo yeu cau giang vien
-
-- [x] Dang nhap va phan quyen Admin / Thu thu / Doc gia (bo khung nghiep vu da duoc tich hop).
-- [x] Xuat danh muc sach va danh sach doc gia ra CSV UTF-8.
-- [x] Unit test tu dong cho quy tac phan quyen va escape CSV.
-- [ ] Do hieu nang chi tiet va tao bieu do so sanh sau khi AVL/BST/Hash Table/Graph duoc cai dat.
-- [ ] Mo rong unit test cho cac CTDL, file I/O, muon-tra va thong ke.
+Chi danh dau hoan thanh khi ma nguon hoac tai lieu da duoc kiem tra. Muc Tuan 5 hien la demo CTDL va File I/O, chua bao gom nghiep vu muon-tra cua Tuan 6.

@@ -1,15 +1,37 @@
 digraph QuanLyThuVien {
-  graph [rankdir=LR, bgcolor="white", pad="0.2", nodesep="0.4", ranksep="0.7", fontname="DejaVu Sans", label="SO DO MODULE / LOP - QUAN LY THU VIEN", labelloc=t, fontsize=18];
-  node [shape=record, style="rounded,filled", fillcolor="#F4F7FB", color="#52657A", fontname="DejaVu Sans", fontsize=10, margin="0.12,0.08"];
-  edge [color="#52657A", arrowsize=0.75, fontname="DejaVu Sans", fontsize=9];
-  Main [label="{main.cpp|main()\nDieu phoi vong lap menu}", fillcolor="#E8F0FE"];
-  Auth [label="{XacThuc|dangNhap()\nkhoiTaoTaiKhoan()\ndoiMatKhau()}"];
-  Role [label="{PhanQuyen|VaiTro\nChucNang\ncoQuyen()}"];
-  Menu [label="{Menu|showMainMenu()}"];
-  Store [label="{LuuTru|doc/ghi Sach\ndoc/ghi DocGia\nFile .dat}"];
-  Csv [label="{XuatCSV|xuatSachCSV()\nxuatDocGiaCSV()}"];
-  Model [label="{KieuDuLieu|Sach\nDocGia}", fillcolor="#FFF4E5"];
-  Tests [label="{KiemThu|test_tinh_nang.cpp\nPhan quyen + CSV}", fillcolor="#E9F7EF"];
-  Main -> Menu [label="hien thi"]; Main -> Auth [label="xac thuc"]; Main -> Role [label="kiem tra quyen"]; Main -> Store [label="khoi tao du lieu"]; Main -> Csv [label="yeu cau xuat"];
-  Auth -> Role [label="gan vai tro"]; Store -> Model [label="doc/ghi"]; Csv -> Store [label="doc du lieu"]; Tests -> Role [style=dashed,label="kiem thu"]; Tests -> Csv [style=dashed,label="kiem thu"];
+  graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.55", label="KIEN TRUC MODULE QUAN LY THU VIEN", labelloc=t, fontsize=18, fontname="DejaVu Sans"];
+  node [shape=box, style="rounded,filled", fillcolor="#F5F7FA", color="#526579", fontname="DejaVu Sans", fontsize=10, margin="0.14,0.09"];
+  edge [color="#526579", fontname="DejaVu Sans", fontsize=9, arrowsize=0.7];
+
+  nguoidung [label="Nguoi dung\nAdmin / Thu thu / Doc gia", fillcolor="#E8F1FF"];
+  auth [label="Xac thuc & Phan quyen\nxacthuc.cpp / phanquyen.cpp", fillcolor="#FFF3D6"];
+  main [label="main.cpp + menu.cpp\nDieu phoi luong chuong trinh", fillcolor="#E7F6EC"];
+  nguoidung -> auth -> main;
+
+  sach [label="Quan ly sach\nquanly_sach.cpp"];
+  avl [label="Cay AVL\nKhoa ISBN"];
+  bst [label="Cay BST\nDuyet in-order"];
+  sachfile [label="sach.dat\nFile nhi phan"];
+  docgia [label="Quan ly doc gia\nquanly_docgia.cpp"];
+  hash [label="Hash Table\nSeparate chaining"];
+  dgfile [label="docgia.dat\nFile nhi phan"];
+  tuan5 [label="Demo CTDL Tuan 5\nmenu_tuan5.cpp"];
+  linked [label="Danh sach lien ket don\nPhieuMuon"];
+  linkedfile [label="phieumuon.dat"];
+  dynamic [label="Mang dong tu cai dat\nGiaoDich"];
+  dynamicfile [label="lichsugiaodich.dat"];
+  csv [label="Xuat CSV\nxuatcsv.cpp"];
+  log [label="Nhat ky thao tac\nhoatdong.txt"];
+
+  main -> sach; main -> docgia; main -> tuan5; main -> csv;
+  sach -> avl; sach -> bst; avl -> sachfile; bst -> sach;
+  docgia -> hash -> dgfile;
+  tuan5 -> linked -> linkedfile;
+  tuan5 -> dynamic -> dynamicfile;
+  sach -> log; docgia -> log; tuan5 -> log;
+  csv -> sachfile; csv -> dgfile;
+
+  {rank=same; sach; docgia; tuan5; csv}
+  {rank=same; avl; bst; hash; linked; dynamic}
+  {rank=same; sachfile; dgfile; linkedfile; dynamicfile; log}
 }

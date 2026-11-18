@@ -13,6 +13,9 @@ build/
 /data/taikhoan.dat
 /data/phieumuon.dat
 /data/lichsugiaodich.dat
+/data/test_*.dat
+/data/phieumuon.dat
+/data/lichsugiaodich.dat
 /data/saoluu/*
 !/data/saoluu/.gitkeep
 /data/nhatky/*.txt

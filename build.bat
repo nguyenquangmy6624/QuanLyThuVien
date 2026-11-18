@@ -6,7 +6,7 @@ if not exist data\nhatky mkdir data\nhatky
 if not exist data\saoluu mkdir data\saoluu
 
 echo Dang bien dich QuanLyThuVien bang C++11...
-g++ -std=c++11 -Wall -Wextra -pedantic -Iinclude src\main.cpp src\menu.cpp src\phanquyen.cpp src\xacthuc.cpp src\luutru.cpp src\xuatcsv.cpp -o build\QuanLyThuVien.exe
+g++ -std=c++11 -Wall -Wextra -pedantic -Iinclude src\main.cpp src\menu.cpp src\phanquyen.cpp src\xacthuc.cpp src\luutru.cpp src\xuatcsv.cpp src\cay_avl.cpp src\cay_bst.cpp src\quanly_sach.cpp src\bangbam_docgia.cpp src\quanly_docgia.cpp src\danh_sach_phieumuon.cpp src\menu_tuan5.cpp -o build\QuanLyThuVien.exe
 if errorlevel 1 (
     echo Bien dich that bai. Hay kiem tra thong bao loi phia tren.
     exit /b 1

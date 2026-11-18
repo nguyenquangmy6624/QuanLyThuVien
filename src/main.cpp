@@ -2,6 +2,9 @@
 #include "xacthuc.h"
 #include "luutru.h"
 #include "xuatcsv.h"
+#include "quanly_sach.h"
+#include "quanly_docgia.h"
+#include "menu_tuan5.h"
 
 #include <iostream>
 #include <string>
@@ -53,10 +56,10 @@ int main() {
             const int luaChon = showMainMenu(taiKhoan.vaiTro);
             switch (luaChon) {
                 case 1:
-                    if (kiemTraQuyenTruocKhiThucThi(taiKhoan.vaiTro, ChucNang::QuanLySach)) hienThiChuaHoanThanh("quan ly sach");
+                    if (kiemTraQuyenTruocKhiThucThi(taiKhoan.vaiTro, ChucNang::QuanLySach)) menuQuanLySach();
                     break;
                 case 2:
-                    if (kiemTraQuyenTruocKhiThucThi(taiKhoan.vaiTro, ChucNang::QuanLyDocGia)) hienThiChuaHoanThanh("quan ly doc gia");
+                    if (kiemTraQuyenTruocKhiThucThi(taiKhoan.vaiTro, ChucNang::QuanLyDocGia)) menuQuanLyDocGia();
                     break;
                 case 3:
                     if (kiemTraQuyenTruocKhiThucThi(taiKhoan.vaiTro, ChucNang::MuonTra)) hienThiChuaHoanThanh("muon - tra sach");
@@ -65,7 +68,7 @@ int main() {
                     if (kiemTraQuyenTruocKhiThucThi(taiKhoan.vaiTro, ChucNang::ThongKe)) hienThiChuaHoanThanh("thong ke - bao cao");
                     break;
                 case 5:
-                    if (kiemTraQuyenTruocKhiThucThi(taiKhoan.vaiTro, ChucNang::TimKiem)) hienThiChuaHoanThanh("tim kiem sach");
+                    if (kiemTraQuyenTruocKhiThucThi(taiKhoan.vaiTro, ChucNang::TimKiem)) menuTimKiemSach();
                     break;
                 case 6:
                     if (kiemTraQuyenTruocKhiThucThi(taiKhoan.vaiTro, ChucNang::LuuTru)) hienThiChuaHoanThanh("luu tru va sao luu");
@@ -75,6 +78,9 @@ int main() {
                     break;
                 case 8:
                     doiMatKhauTaiKhoan(taiKhoan);
+                    break;
+                case 10:
+                    if (kiemTraQuyenTruocKhiThucThi(taiKhoan.vaiTro, ChucNang::DemoTuan5)) menuDemoTuan5();
                     break;
                 case 9:
                     dangTrongPhien = false;

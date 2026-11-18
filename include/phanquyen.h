@@ -16,7 +16,8 @@ enum class ChucNang {
     ThongKe,
     TimKiem,
     LuuTru,
-    XuatCSV
+    XuatCSV,
+    DemoTuan5
 };
 
 struct TaiKhoanDangNhap {
